@@ -4,11 +4,13 @@ public class WordleGame {
     
     public static void main(String[] args) {
         WordDatabase database = new WordDatabase();
-        // database.printWords();
+        database.printWords();
 
         String targetWord = database.chooseWord(); 
 
         System.out.println(targetWord);
+
+        System.out.println(database.isValid("wrest"));
 
         // while (guessNumber < guessLimit) {
         //     String guessWord = try { readWord() } catch 
