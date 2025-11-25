@@ -1,10 +1,14 @@
 import java.util.Scanner;
 
 public class WordInput {
+    private Scanner in;
+
+    public WordInput() {
+        this.in = new Scanner(System.in);  
+    }
+
     public String readWord(WordDatabase database) {
-        Scanner in = new Scanner(System.in);
         String word = in.nextLine();
-        in.close();
 
         word = word.toLowerCase();
 
@@ -18,5 +22,9 @@ public class WordInput {
         }
         
         return word;
+    }
+
+    public void close() {
+        in.close();
     }
 }
