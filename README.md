@@ -10,25 +10,6 @@
 $ javac -d out WordleGame.java && java -cp out WordleGame
 Enter word: (1 out of 6):
 mango
----?-
-Enter word: (2 out of 6):
-print
---+--
-Enter word: (3 out of 6):
-grind
-+-+-+
-Enter word: (4 out of 6):
-glide
-+?+?-
-Enter word: (5 out of 6):
-guild
-+++++
-Won game in 5 guesses !!!
-
-Yuliya@Aspire3 MINGW64 /d/Ignat/cam/ia/oop/supo1/wordle (wordle-prototype)
-$ javac -d out WordleGame.java && java -cp out WordleGame
-Enter word: (1 out of 6):
-mango
 -???-
 Enter word: (2 out of 6):
 grand
