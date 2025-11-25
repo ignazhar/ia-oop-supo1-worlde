@@ -18,7 +18,7 @@ public class WordInput {
         }
         
         if (!database.isValid(word)) {
-            throw new IllegalArgumentException("Invalid word (not found in the database)");
+            throw new IllegalArgumentException("Word not found in the database");
         }
         
         return word;

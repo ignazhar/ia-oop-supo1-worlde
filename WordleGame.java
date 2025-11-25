@@ -11,7 +11,7 @@ public class WordleGame {
 
         while (guessNumber < guessLimit) {
             guessNumber ++;
-            System.out.print("Enter word: (" + guessNumber + " out of " + guessLimit + "):");
+            System.out.println("Enter word: (" + guessNumber + " out of " + guessLimit + "):");
             try {
                 String guessWord = input.readWord(database);
                  
