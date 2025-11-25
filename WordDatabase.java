@@ -45,7 +45,7 @@ public class WordDatabase {
             else
                 high = mid - 1;
         }
-        return list[low] == word;
+        return list[low].equals(word);
     }
 
     public boolean isValid(String word) {
@@ -54,7 +54,7 @@ public class WordDatabase {
 
     // debug method, TODO: delete
     public void printWords() {
-        for (int i = 0; i < 10; i ++) {
+        for (int i = 0; i < 100; i ++) {
             System.err.println(wordleLa[i].length() + " " + wordleLa[i]);
         }
     }
