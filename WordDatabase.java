@@ -8,13 +8,13 @@ public class WordDatabase {
     private static String[] wordleLa;
     private static String[] wordleTa;
     
-    // Copilot's prompt: How to get parse the txt files and get arrays of words (used simpler version out of 2)
+    // [AI] Copilot's prompt: How to get parse the txt files and get arrays of words (used simpler version out of 2)
     public static String[] loadFromFile(String filePath) throws IOException {
         List<String> words = Files.readAllLines(Paths.get(filePath));
         return words.toArray(new String[0]);
     }
 
-    // Asked google gemini pro to help with handling exceptions
+    // [AI] Asked google gemini pro to help with handling exceptions
     public WordDatabase() {
         try {
             wordleLa = loadFromFile("wordle-La.txt");
@@ -50,12 +50,5 @@ public class WordDatabase {
 
     public boolean isValid(String word) {
         return isIn(wordleLa, word) || isIn(wordleTa, word);
-    }
-
-    // debug method, TODO: delete
-    public void printWords() {
-        for (int i = 0; i < 100; i ++) {
-            System.err.println(wordleLa[i].length() + " " + wordleLa[i]);
-        }
     }
 }

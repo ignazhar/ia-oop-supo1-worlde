@@ -4,8 +4,6 @@ public class WordHandler {
     }
 
     public static String compare(String word, String target) {
-        System.out.println("Try: " + word + " to " + target);
-
         int n = word.length();
 
         char[] result = new char[n];
@@ -14,7 +12,6 @@ public class WordHandler {
 
         // setting '+'
         for (int i = 0; i < n; i ++) {
-            System.out.println(word.charAt(i) + " vs " + target.charAt(i));
             if (word.charAt(i) == target.charAt(i)) {
                 result[i] = '+';
             }
@@ -40,5 +37,5 @@ public class WordHandler {
         }
 
         return String.valueOf(result);
-    }    
+    }
 }
